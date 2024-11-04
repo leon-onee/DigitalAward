@@ -1,0 +1,93 @@
+.detail-works {
+  padding-top: 60px;
+  padding-bottom: 150px;
+}
+@media (min-width: 1280px) {
+  .detail-works {
+    padding-top: 80px;
+  }
+}
+@media (min-width: 1920px) {
+  .detail-works {
+    padding-top: 100px;
+  }
+}
+.detail-works__filter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  .detail-works__filter {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+@media (min-width: 1280px) {
+  .detail-works__filter {
+    gap: 30px;
+  }
+}
+@media (min-width: 1920px) {
+  .detail-works__filter {
+    gap: 40px;
+  }
+}
+.detail-works__wrapper {
+  margin-top: 30px;
+  display: grid;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .detail-works__wrapper {
+    margin-top: 40px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1280px) {
+  .detail-works__wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+}
+@media (min-width: 1920px) {
+  .detail-works__wrapper {
+    gap: 16px;
+  }
+}
+.detail-works__item {
+  width: 100% !important;
+}
+@media (min-width: 768px) {
+  .detail-works__item:nth-child(12n+1), .detail-works__item:nth-child(12n+4), .detail-works__item:nth-child(12n+5), .detail-works__item:nth-child(12n+8), .detail-works__item:nth-child(12n+9), .detail-works__item:nth-child(12n+12) {
+    grid-column: 2 span;
+  }
+  .detail-works__item:nth-child(2) {
+    grid-column: initial;
+  }
+}
+@media (min-width: 1280px) {
+  .detail-works__item:nth-child(12n+1), .detail-works__item:nth-child(12n+4), .detail-works__item:nth-child(12n+5), .detail-works__item:nth-child(12n+8), .detail-works__item:nth-child(12n+9), .detail-works__item:nth-child(12n+12) {
+    grid-column: initial;
+  }
+  .detail-works__item:nth-child(12n), .detail-works__item:nth-child(12n+1), .detail-works__item:nth-child(12n+6), .detail-works__item:nth-child(12n+7) {
+    grid-column: 2 span;
+  }
+  .detail-works__item:nth-child(2) {
+    grid-column: initial;
+  }
+}
+.detail-works__more {
+  width: 100%;
+  margin-top: 40px;
+}
+@media (min-width: 1280px) {
+  .detail-works__more {
+    margin-top: 60px;
+  }
+}
+@media (min-width: 1920px) {
+  .detail-works__more {
+    margin-top: 90px;
+  }
+}/*# sourceMappingURL=detail-works.css.map */

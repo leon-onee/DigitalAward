@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+			name="viewport"
+		/>
+		<meta content="ie=edge" http-equiv="X-UA-Compatible" />
+		<title>nomination page</title>
+
+		<link
+			href="./assets/plugins/swiper/swiper-bundle.min.css"
+			rel="stylesheet"
+		/>
+		<link
+		rel="stylesheet"
+		href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css"
+	/>
+		<link href="./css/global.css" rel="stylesheet" />
+		<link href="./css/nomination.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__wrapper">
+						<div class="header__menu-wrap">
+							<ul class="header__menu">
+								<li><a href="#">главная</a></li>
+								<li><a href="#">о премии</a></li>
+								<li><a href="#">номинации</a></li>
+								<li><a href="#">работы</a></li>
+								<li><a href="#">жюри</a></li>
+								<li><a href="#">связаться с нами</a></li>
+							</ul>
+						</div>
+						<button class="header__burger" aria-label="Открыть меню">
+							<div class="header__burger-inner">
+								<span></span>
+							</div>
+						</button>
+					</div>
+				</div>
+			</header>
+			<main>
+				<section class="detail-header detail-header">
+					<div class="container">
+						<ul class="breadcrumbs">
+							<li class="breadcrumbs__item"><a href="">главная</a></li>
+							<li class="breadcrumbs__item"><a href="">Брендинг 2024</a></li>
+						</ul>
+						<h1 class="detail-header__title page-title-h1">Брендинг 2024</h1>
+					</div>
+				</section>
+				<section class="nomination">
+					<div class="container">
+						<div class="nomination__wrapper">
+							<div class="nomination__desc">
+								<p>
+									Номинация для молодых агентств до 5 лет (с момент
+									регистрации юр. лица) и штатом до 15 человек. Расскажите,
+									как вы стартовали, что было сложного и интересного, куда
+									вы стремитесь и о чем мечтаете
+								</p>
+								<p>
+									Премия рассчитана на региональные digital-агентства, которым
+									есть что показать и чем поделиться. Будем рады видеть в числе
+									участников коллег из Нижнего Новгорода, Казани, Кирова, Пензы,
+									Владимира, других регионов и областей. Будем рады видеть в
+									числе участников коллег из Нижнего Новгорода, Казани, Кирова,
+									Пензы, Владимира, других регионов и областей.
+								</p>
+							</div>
+							<div class="nomination__icon">
+								<img src="./assets/svg/nomination-icon.svg" alt="" />
+							</div>
+						</div>
+						<div class="nomination__price">
+							<span>
+								стоимость участия
+								<svg
+									width="50"
+									height="6"
+									viewBox="0 0 50 6"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<rect width="50" height="6" fill="white" />
+								</svg>
+								7 999 руб.
+							</span>
+							<p>* Цена актуальна до 15 февраля 12:00. Далее — повышение</p>
+						</div>
+					</div>
+				</section>
+				<section class="nomination-form">
+					<div class="container">
+						<h2 class="nomination-form__title">принять участие</h2>
+						<form action="" class="nomination-form__info">
+							<fieldset class="nomination-form__contact">
+								<legend>Контактные данные</legend>
+								<div class="nomination-input">
+									<input
+										type="text"
+										placeholder="ФИО, подающего заявку*"
+										required
+									/>
+								</div>
+								<div class="nomination-input">
+									<input type="text" placeholder="Ваша должность*" required />
+								</div>
+								<div class="nomination-input">
+									<input type="email" placeholder="Email*" required />
+								</div>
+								<div class="nomination-input">
+									<input type="tel" placeholder="+7(999) 999-99-99*" required />
+								</div>
+								<div class="nomination-input">
+									<input type="text" placeholder="Telegram" />
+								</div>
+							</fieldset>
+							<fieldset class="nomination-form__company">
+								<legend>Данные о компании</legend>
+								<div class="nomination-input">
+									<input
+										type="text"
+										placeholder="Название компании*"
+										required
+									/>
+								</div>
+								<div class="nomination-input">
+									<input type="text" placeholder="Регион*" required />
+								</div>
+								<div class="nomination-input">
+									<input type="text" placeholder="ИНН*" required />
+								</div>
+								<div class="nomination-input">
+									<input type="text" placeholder="Сайт" />
+								</div>
+								<div class="nomination-input">
+									<input type="text" placeholder="Ссылка на социальную сеть" />
+								</div>
+							</fieldset>
+							<hr />
+							<fieldset class="nomination-form__project">
+								<legend>Данные о проекте</legend>
+								<div class="nomination-textarea">
+									<textarea
+										type="text"
+										required
+										placeholder="Название работы*"
+										maxlength="70"
+										rows="1"
+									></textarea>
+								</div>
+								<div class="nomination-textarea">
+									<textarea
+										type="text"
+										required
+										placeholder="Рекламируемый бренд*"
+										maxlength="70"
+										rows="1"
+									></textarea>
+								</div>
+								<div class="nomination-textarea">
+									<textarea
+										class="large"
+										type="text"
+										required
+										placeholder="Цель проекта*"
+										maxlength="300"
+										rows="1"
+									></textarea>
+								</div>
+								<div class="nomination-textarea">
+									<textarea
+										class="large"
+										type="text"
+										required
+										placeholder="Задачи проекта*"
+										maxlength="300"
+										rows="1"
+									></textarea>
+								</div>
+								<div class="nomination-textarea">
+									<textarea
+										class="large"
+										type="text"
+										required
+										placeholder="Идеи и решения*"
+										maxlength="2000"
+										rows="1"
+									></textarea>
+								</div>
+								<input type="text" placeholder="Ссылка на ваш проект" />
+							</fieldset>
+							<hr />
+							<fieldset class="nomination-form__files">
+								<legend>файлы проекта</legend>
+								<fieldset class="nomination-form__miniature">
+									<div class="nomination-file">
+										<div class="nomination-file__title">Миниатюра проекта*</div>
+										<div class="nomination-file__desc">
+											файл jpeg или png в пропорции 3:2
+										</div>
+										<div class="nomination-file__input" draggable="true">
+											<label>
+												<input
+													type="file"
+													class="project-files__input"
+													accept=".jpeg, .jpg, .png"
+													required
+												/>
+												<div class="nomination-file__input-content">
+													<div class="nomination-file__input-img"></div>
+												</div>
+											</label>
+											<div class="nomination-file__progress">
+												<span class="nomination-file__progress-desc"
+													>идет загрузка вашего файла</span
+												>
+												<progress value="0" max="100"></progress>
+												<span class="nomination-file__progress-percent"
+													>0%</span
+												>
+											</div>
+											<svg
+												class="nomination-file__input-icon"
+												width="66"
+												height="66"
+												viewBox="0 0 66 66"
+												role="button"
+											>
+												<use href="./assets/svg/sprite.svg#plus"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="nomination-file">
+										<div class="nomination-file__title">Миниатюра проекта*</div>
+										<div class="nomination-file__desc">
+											файл jpeg или png в пропорции 2:3
+										</div>
+										<div class="nomination-file__input" draggable="true">
+											<label>
+												<input
+													type="file"
+													class="project-files__input"
+													accept=".jpeg, .jpg, .png"
+													required
+												/>
+												<div class="nomination-file__input-content">
+													<div class="nomination-file__input-img"></div>
+												</div>
+											</label>
+											<div class="nomination-file__progress">
+												<span class="nomination-file__progress-desc"
+													>идет загрузка вашего файла</span
+												>
+												<progress value="0" max="100"></progress>
+												<span class="nomination-file__progress-percent"
+													>0%</span
+												>
+											</div>
+											<svg
+												class="nomination-file__input-icon"
+												width="66"
+												height="66"
+												viewBox="0 0 66 66"
+												role="button"
+											>
+												<use href="./assets/svg/sprite.svg#plus"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="nomination-file">
+										<div class="nomination-file__title">Обложка проекта*</div>
+										<div class="nomination-file__desc">
+											файл jpeg или png в пропорции 2:2
+										</div>
+										<div class="nomination-file__input" draggable="true">
+											<label>
+												<input
+													type="file"
+													class="project-files__input"
+													accept=".jpeg, .jpg, .png"
+													required
+												/>
+												<div class="nomination-file__input-content">
+													<div class="nomination-file__input-img"></div>
+												</div>
+											</label>
+											<div class="nomination-file__progress">
+												<span class="nomination-file__progress-desc"
+													>идет загрузка вашего файла</span
+												>
+												<progress value="0" max="100"></progress>
+												<span class="nomination-file__progress-percent"
+													>0%</span
+												>
+											</div>
+											<svg
+												class="nomination-file__input-icon"
+												width="66"
+												height="66"
+												viewBox="0 0 66 66"
+												role="button"
+											>
+												<use href="./assets/svg/sprite.svg#plus"></use>
+											</svg>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset class="nomination-form__img">
+									<div class="nomination-file">
+										<div class="nomination-file__title">
+											Изображение проекта
+										</div>
+										<div class="nomination-file__desc">
+											файл jpeg или png с неограниченной высотой
+										</div>
+										<div class="nomination-file__input" draggable="true">
+											<label>
+												<input
+													type="file"
+													class="project-files__input"
+													accept=".jpeg, .jpg, .png"
+												/>
+												<div class="nomination-file__input-content">
+													<div class="nomination-file__input-img"></div>
+												</div>
+											</label>
+											<div class="nomination-file__progress">
+												<span class="nomination-file__progress-desc"
+													>идет загрузка вашего файла</span
+												>
+												<progress value="0" max="100"></progress>
+												<span class="nomination-file__progress-percent"
+													>0%</span
+												>
+											</div>
+											<svg
+												class="nomination-file__input-icon"
+												width="66"
+												height="66"
+												viewBox="0 0 66 66"
+												role="button"
+											>
+												<use href="./assets/svg/sprite.svg#plus"></use>
+											</svg>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset data-max="10" class="nomination-form__slider">
+									<div class="nomination-file">
+										<div class="nomination-file__title">
+											Слайдер изображений
+										</div>
+										<div class="nomination-file__desc">
+											файлы jpeg или png в пропорции 2:2 (максимальное кол-во 10
+											шт)
+										</div>
+										<div class="nomination-file__wrapper">
+											<div class="nomination-file__input" draggable="true">
+												<label>
+													<input
+														type="file"
+														class="project-files__input"
+														accept=".jpeg, .jpg, .png"
+													/>
+													<div class="nomination-file__input-content">
+														<div class="nomination-file__input-img"></div>
+													</div>
+												</label>
+												<div class="nomination-file__progress">
+													<span class="nomination-file__progress-desc"
+														>идет загрузка вашего файла</span
+													>
+													<progress value="0" max="100"></progress>
+													<span class="nomination-file__progress-percent"
+														>0%</span
+													>
+												</div>
+												<svg
+													class="nomination-file__input-icon"
+													width="66"
+													height="66"
+													viewBox="0 0 66 66"
+													role="button"
+												>
+													<use href="./assets/svg/sprite.svg#plus"></use>
+												</svg>
+											</div>
+											<div class="nomination-file__input" draggable="true">
+												<label>
+													<input
+														type="file"
+														class="project-files__input"
+														accept=".jpeg, .jpg, .png"
+													/>
+													<div class="nomination-file__input-content">
+														<div class="nomination-file__input-img"></div>
+													</div>
+												</label>
+												<div class="nomination-file__progress">
+													<span class="nomination-file__progress-desc"
+														>идет загрузка вашего файла</span
+													>
+													<progress value="0" max="100"></progress>
+													<span class="nomination-file__progress-percent"
+														>0%</span
+													>
+												</div>
+												<svg
+													class="nomination-file__input-icon"
+													width="66"
+													height="66"
+													viewBox="0 0 66 66"
+													role="button"
+												>
+													<use href="./assets/svg/sprite.svg#plus"></use>
+												</svg>
+											</div>
+											<div class="nomination-file__input" draggable="true">
+												<label>
+													<input
+														type="file"
+														class="project-files__input"
+														accept=".jpeg, .jpg, .png"
+													/>
+													<div class="nomination-file__input-content">
+														<div class="nomination-file__input-img"></div>
+													</div>
+												</label>
+												<div class="nomination-file__progress">
+													<span class="nomination-file__progress-desc"
+														>идет загрузка вашего файла</span
+													>
+													<progress value="0" max="100"></progress>
+													<span class="nomination-file__progress-percent"
+														>0%</span
+													>
+												</div>
+												<svg
+													class="nomination-file__input-icon"
+													width="66"
+													height="66"
+													viewBox="0 0 66 66"
+													role="button"
+												>
+													<use href="./assets/svg/sprite.svg#plus"></use>
+												</svg>
+											</div>
+											<div class="nomination-file__input" draggable="true">
+												<label>
+													<input
+														type="file"
+														class="project-files__input"
+														accept=".jpeg, .jpg, .png"
+													/>
+													<div class="nomination-file__input-content">
+														<div class="nomination-file__input-img"></div>
+													</div>
+												</label>
+												<div class="nomination-file__progress">
+													<span class="nomination-file__progress-desc"
+														>идет загрузка вашего файла</span
+													>
+													<progress value="0" max="100"></progress>
+													<span class="nomination-file__progress-percent"
+														>0%</span
+													>
+												</div>
+												<svg
+													class="nomination-file__input-icon"
+													width="66"
+													height="66"
+													viewBox="0 0 66 66"
+													role="button"
+												>
+													<use href="./assets/svg/sprite.svg#plus"></use>
+												</svg>
+											</div>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset class="nomination-form__img">
+									<div class="nomination-file">
+										<div class="nomination-file__title">Видео проекта</div>
+										<div class="nomination-file__input" draggable="true">
+											<label>
+												<input
+													type="file"
+													class="project-files__input"
+													accept=".mp4"
+												/>
+												<div class="nomination-file__input-content">
+													<div class="nomination-file__input-img"></div>
+												</div>
+											</label>
+											<div class="nomination-file__progress">
+												<span class="nomination-file__progress-desc"
+													>идет загрузка вашего файла</span
+												>
+												<progress value="0" max="100"></progress>
+												<span class="nomination-file__progress-percent"
+													>0%</span
+												>
+											</div>
+											<svg
+												class="nomination-file__input-icon"
+												width="66"
+												height="66"
+												viewBox="0 0 66 66"
+												role="button"
+											>
+												<use href="./assets/svg/sprite.svg#plus"></use>
+											</svg>
+										</div>
+									</div>
+								</fieldset>
+								<fieldset class="nomination-form__img">
+									<div class="nomination-file__title">Видео проекта</div>
+									<div class="nomination-input">
+										<input
+											type="url"
+											placeholder="Ссылка на видео Vimeo/Youtube/Vkontakte"
+										/>
+									</div>
+								</fieldset>
+								<input
+									class="nomination-form__payment-method"
+									type="hidden"
+									name="payment-method"
+								/>
+								<!--online | request-->
+							</fieldset>
+
+							<div class="nomination-form__example">
+								Посмотреть пример оформленного кейса можно <a href="">здесь</a>
+							</div>
+
+							<div class="nomination-form__footer">
+								<hr />
+								<div class="nomination-form__price">
+									<div class="nomination__price">
+										<span>
+											стоимость участия
+											<svg
+												width="50"
+												height="6"
+												viewBox="0 0 50 6"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<rect width="50" height="6" fill="white" />
+											</svg>
+											7 999 руб.
+										</span>
+										<p>
+											* Цена актуальна до 15 февраля 12:00. Далее — повышение
+										</p>
+									</div>
+								</div>
+
+								<div class="nomination-form__agreements">
+									<div class="nomination-form__agreement">
+										<input
+											type="checkbox"
+											name="personal"
+											id="personal"
+											required
+											aria-required="true"
+										/>
+										<label for="personal">
+											Я согласен на обработку персональных данных и ознакомился
+											с
+											<a href="">политикой конфиденциальности</a>
+										</label>
+									</div>
+									<div class="nomination-form__agreement">
+										<input
+											type="checkbox"
+											name="rules"
+											id="rules"
+											required
+											aria-required="true"
+										/>
+										<label for="rules">
+											Я согласен с <a href="">правилами участия</a> в
+											независимой премии Digital-Оттепель
+										</label>
+									</div>
+								</div>
+								<button class="nomination-form__submit btn btn--red">
+									перейти к оплате
+								</button>
+							</div>
+						</form>
+					</div>
+				</section>
+				<div class="scroll-to-top">
+					<div class="container">
+						<button class="scroll-to-top__btn">
+							<svg
+								class="scroll-to-top__icon"
+								width="26"
+								height="44"
+								viewBox="0 0 26 44"
+							>
+								<use href="./assets/svg/sprite.svg#arrow-top"></use>
+							</svg>
+							<div class="scroll-to-top__text">наверх</div>
+						</button>
+					</div>
+				</div>
+			</main>
+			<div class="fixed">
+				<section class="questions">
+					<div class="container">
+						<div class="questions__title page-title-h2">остались вопросы?</div>
+						<div class="questions__desc">
+							Свяжитесь с нами и мы ответим на все ваши вопросы
+						</div>
+						<form action="" class="questions__form" novalidate>
+							<div class="questions__input">
+								<input type="text" placeholder="ФИО*" required />
+							</div>
+							<div class="questions__input">
+								<input type="email" placeholder="Email*" required />
+							</div>
+							<div class="questions__input">
+								<input type="text" placeholder="Ваш комментарий*" required />
+							</div>
+							<button class="questions__send btn btn--black">
+								<span>Отправить</span>
+							</button>
+						</form>
+						<div class="questions__policy">
+							Нажимая «Отправить» вы соглашаетесь с политикой конфиденциальности
+						</div>
+					</div>
+				</section>
+				<footer class="footer">
+					<div class="container footer__grid">
+						<div class="footer__info">
+							<a href="/" class="footer__logo">
+								<svg width="169" height="44" viewBox="0 0 169 44">
+									<use href="./assets/svg/sprite.svg#logo"></use>
+								</svg>
+							</a>
+							<a class="footer__info-tel" href="tel:+79960004329"
+								>+7 (996) 000-43-29</a
+							>
+							<a class="footer__info-tel" href="tel:+78312171703"
+								>+7 (831) 217-17-03</a
+							>
+							<a class="footer__info-mail" href="mailto:info@digitalnn.ru"
+								>info@digitalnn.ru</a
+							>
+						</div>
+						<ul class="footer__nav">
+							<li><a href="">о премии</a></li>
+							<li><a href="">правила участия</a></li>
+							<li><a href="">номинации</a></li>
+							<li><a href="">жюри</a></li>
+							<li><a href="">работы</a></li>
+						</ul>
+						<div class="footer__social">
+							<span>присоединяйтесь</span>
+							<a href="">
+								<svg width="65" height="64" viewBox="0 0 65 64">
+									<use href="./assets/svg/sprite.svg#tg"></use>
+								</svg>
+							</a>
+							<a href="">
+								<svg width="65" height="64" viewBox="0 0 65 64">
+									<use href="./assets/svg/sprite.svg#vk"></use>
+								</svg>
+							</a>
+						</div>
+						<ul class="footer__legal-info">
+							<li>
+								<a href="">Политика конфиденциальности и обработки данных</a>
+							</li>
+							<li><a href="">Оферта</a></li>
+							<li><a href="">Разработано R-TOP</a></li>
+						</ul>
+					</div>
+				</footer>
+			</div>
+		</div>
+
+		<div class="modal modal-payment-method">
+			<div class="modal__wrapper">
+				<div class="modal__title">Выберите способ оплаты</div>
+				<div class="modal__content">
+					<button
+						class="modal-payment-method__btn btn btn--red"
+						data-value="online"
+					>
+						оплата онлайн
+					</button>
+					<button
+						class="modal-payment-method__btn btn btn--red"
+						data-value="request"
+					>
+						заявка на выставление счёта
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal modal-success">
+			<div class="modal__success">
+				<div class="modal__success-title">заявка успешно отправлена</div>
+				<div class="modal__success-desc">
+					Менеджер свяжется с вами в ближайшее время
+				</div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+		<script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+		<script src="./assets/plugins/smoothscroll.min.js"></script>
+		<script src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+		<script src="./assets/plugins/inputmask.min.js"></script>
+		<script src="./assets/plugins/just-validate.min.js"></script>
+		<script src="./js/main.js"></script>
+		<script src="./js/nomination.js"></script>
+	</body>
+</html>
